@@ -10,22 +10,34 @@ body {
   line-height: 1.6;
 }
 
+header {
+  background: #9b3d2d; /* darker terracotta */
+  padding: 0 30px;      /* horizontal padding */
+  height: 80px;         /* consistent header height */
+  display: flex;        /* horizontal layout */
+  justify-content: space-between; /* left/right spacing */
+  align-items: flex-end; /* vertical alignment toward bottom */
+  border-bottom: 1px solid #852f20; /* subtle bottom border */
+}
+
 header h1 {
   font-size: 2em;
   margin: 0;
-  color: #FFE8D6; /* warm cream/light beige, softer than stark white */
+  color: #FFE8D6;        /* soft cream, warm */
+  line-height: 1;        /* reduces extra vertical spacing */
 }
 
 nav a {
   text-decoration: none;
-  color: #FFE8D6; /* match h1 for consistency */
+  color: #FFE8D6;       /* same warm cream as header text */
   font-weight: bold;
-  margin-left: 20px;
+  margin-left: 30px;     /* spacing between links */
   font-size: 1em;
+  line-height: 1;        /* aligns better with header h1 */
 }
 
 nav a:hover {
-  color: #FFD1B0; /* slightly darker for hover effect */
+  color: #FFD1B0;       /* subtle hover effect */
 }
 
 main {
