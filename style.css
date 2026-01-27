@@ -10,32 +10,22 @@ body {
   line-height: 1.6;
 }
 
-header {
-  background: #9b3d2d; /* darker terracotta */
-  padding: 0 20px; /* horizontal padding only */
-  height: 80px; /* fixed height for the bar */
-  display: flex;
-  justify-content: space-between; /* pushes name left, nav right */
-  align-items: flex-end; /* aligns content toward bottom of bar */
-  border-bottom: 2px solid #852f20;
-}
-
 header h1 {
   font-size: 2em;
   margin: 0;
-  color: #fff;
+  color: #FFE8D6; /* warm cream/light beige, softer than stark white */
 }
 
 nav a {
   text-decoration: none;
-  color: #fff;
+  color: #FFE8D6; /* match h1 for consistency */
   font-weight: bold;
-  margin-left: 20px; /* spacing between links */
+  margin-left: 20px;
   font-size: 1em;
 }
 
 nav a:hover {
-  text-decoration: underline;
+  color: #FFD1B0; /* slightly darker for hover effect */
 }
 
 main {
