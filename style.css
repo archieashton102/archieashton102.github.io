@@ -1,19 +1,35 @@
+/* Import a clean serif font similar to Hannah Smothers */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
 body {
   margin: 0;
-  font-family: Georgia, serif;
+  padding: 0;
+  font-family: 'Playfair Display', serif;
   background-color: #c86b4a; /* terracotta */
   color: #2b1b14;
+  line-height: 1.6;
+}
+
+header {
+  background: #b85f41; /* slightly darker terracotta for contrast */
+  padding: 20px 0;
+  text-align: center;
+  border-bottom: 2px solid #a0523f;
+}
+
+header h1 {
+  font-size: 2.5em;
+  margin: 0;
 }
 
 nav {
-  background-color: #b85f41;
-  padding: 15px;
+  margin-top: 10px;
 }
 
 nav a {
-  color: #2b1b14;
+  margin: 0 15px;
   text-decoration: none;
-  margin-right: 20px;
+  color: #2b1b14;
   font-weight: bold;
 }
 
@@ -21,7 +37,4 @@ nav a:hover {
   text-decoration: underline;
 }
 
-main {
-  max-width: 700px;
-  padding: 40px;
-}
+mai
