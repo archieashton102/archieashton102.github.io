@@ -1,4 +1,4 @@
-/* Import a clean serif font similar to Hannah Smothers */
+/* Import clean serif font */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
 
 body {
@@ -11,10 +11,10 @@ body {
 }
 
 header {
-  background: #b85f41; /* slightly darker terracotta for contrast */
+  background: #9b3d2d; /* darker terracotta for nav bar */
   padding: 20px 0;
   text-align: center;
-  border-bottom: 2px solid #a0523f;
+  border-bottom: 2px solid #852f20;
 }
 
 header h1 {
@@ -29,7 +29,7 @@ nav {
 nav a {
   margin: 0 15px;
   text-decoration: none;
-  color: #2b1b14;
+  color: #fff; /* lighter text for contrast on dark nav */
   font-weight: bold;
 }
 
@@ -47,11 +47,21 @@ section {
   margin-bottom: 40px;
 }
 
+/* Center About Me section and narrow text width */
+section h2 {
+  text-align: center;
+}
+
+section p {
+  max-width: 600px; /* narrower text line */
+  margin: 10px auto; /* centers text block */
+  text-align: center;
+}
+
 footer {
   text-align: center;
   font-size: 0.9em;
   color: #2b1b14;
   padding: 20px 0;
-  border-top: 1px solid #a0523f;
+  border-top: 1px solid #852f20;
 }
-
