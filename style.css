@@ -10,35 +10,83 @@ body {
   line-height: 1.6;
 }
 
+/* header already styled as before */
 header {
-  background: #9b3d2d; /* darker terracotta */
-  padding: 0 30px;      /* horizontal padding */
-  height: 80px;         /* consistent header height */
-  display: flex;        /* horizontal layout */
-  justify-content: space-between; /* left/right spacing */
-  align-items: flex-end; /* vertical alignment toward bottom */
-  border-bottom: 1px solid #852f20; /* subtle bottom border */
+  background: #9b3d2d;
+  padding: 0 30px;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-bottom: 1px solid #852f20;
+  position: relative; /* for absolute positioning of mobile nav */
 }
 
 header h1 {
   font-size: 2em;
   margin: 0;
-  color: #FFE8D6;        /* soft cream, warm */
-  line-height: 1;        /* reduces extra vertical spacing */
+  color: #FFE8D6;
+  line-height: 1;
 }
 
-nav a {
+/* nav links */
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
   text-decoration: none;
-  color: #FFE8D6;       /* same warm cream as header text */
+  color: #FFE8D6;
   font-weight: bold;
-  margin-left: 30px;     /* spacing between links */
   font-size: 1em;
-  line-height: 1;        /* aligns better with header h1 */
+  line-height: 1;
 }
 
-nav a:hover {
-  color: #FFD1B0;       /* subtle hover effect */
+.nav-links a:hover {
+  color: #FFD1B0;
 }
+
+/* hamburger button hidden on desktop */
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2em;
+  color: #FFE8D6;
+  cursor: pointer;
+}
+
+/* Mobile styles */
+@media (max-width: 700px) {
+  header {
+    height: auto;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px;
+  }
+
+  .nav-toggle {
+    display: block;
+    margin-top: 5px;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .nav-links a {
+    margin: 10px 0;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+}
+
 
 main {
   max-width: 800px;
