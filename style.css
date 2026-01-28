@@ -177,5 +177,8 @@ footer {
 .site-title:hover {
   opacity: 0.85;
 }
+.about p + p {
+  margin-top: 1.2em;
+}
 
 
