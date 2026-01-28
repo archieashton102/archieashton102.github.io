@@ -10,16 +10,20 @@ body {
   line-height: 1.6;
 }
 
-/* header already styled as before */
+/* Header base */
 header {
   background: #9b3d2d;
-  padding: 0 30px;
-  height: 80px;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
   border-bottom: 1px solid #852f20;
-  position: relative; /* for absolute positioning of mobile nav */
+}
+
+.header-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between; /* name left, nav right */
+  align-items: flex-end;          /* flush toward bottom */
+  height: 80px;
+  padding: 0 30px;
 }
 
 header h1 {
@@ -29,17 +33,16 @@ header h1 {
   line-height: 1;
 }
 
-/* nav links */
+/* Desktop nav */
 .nav-links {
   display: flex;
   gap: 30px;
 }
 
 .nav-links a {
-  text-decoration: none;
   color: #FFE8D6;
   font-weight: bold;
-  font-size: 1em;
+  text-decoration: none;
   line-height: 1;
 }
 
@@ -47,9 +50,9 @@ header h1 {
   color: #FFD1B0;
 }
 
-/* hamburger button hidden on desktop */
+/* Hamburger button */
 .nav-toggle {
-  display: none;
+  display: none; /* hidden on desktop */
   background: none;
   border: none;
   font-size: 2em;
@@ -57,18 +60,13 @@ header h1 {
   cursor: pointer;
 }
 
-/* Mobile styles */
+/* Responsive for mobile */
 @media (max-width: 700px) {
-  header {
-    height: auto;
+  .header-inner {
     flex-direction: column;
     align-items: flex-start;
+    height: auto;
     padding: 10px 20px;
-  }
-
-  .nav-toggle {
-    display: block;
-    margin-top: 5px;
   }
 
   .nav-links {
@@ -85,7 +83,13 @@ header h1 {
   .nav-links.active {
     display: flex;
   }
+
+  .nav-toggle {
+    display: block;
+    margin-top: 5px;
+  }
 }
+
 
 
 main {
