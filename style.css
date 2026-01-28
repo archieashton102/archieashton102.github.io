@@ -111,6 +111,12 @@ section {
 section h2 {
   text-align: center;
 }
+.about {
+  text-align: center;
+  max-width: 600px;   /* narrower than main for elegance */
+  margin: 0 auto;
+}
+
 
 section p {
   max-width: 600px; /* narrower text line */
