@@ -169,5 +169,13 @@ footer {
 .nav-links a.active {
   opacity: 0.6;
 }
+.site-title {
+  color: #FFE8D6;
+  text-decoration: none;
+}
+
+.site-title:hover {
+  opacity: 0.85;
+}
 
 
