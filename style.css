@@ -96,10 +96,10 @@ header h1 {
 
 
 main {
-  max-width: 800px;
-  margin: 40px auto;
-  padding: 0 20px;
+  margin-top: 80px;    /* pushes content down from header */
+  margin-bottom: 160px; /* BIG space before email/footer */
 }
+
 
 section {
   margin-bottom: 40px;
