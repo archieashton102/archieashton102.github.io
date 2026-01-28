@@ -123,3 +123,20 @@ footer {
   padding: 20px 0;
   border-top: 1px solid #852f20;
 }
+.contact-email {
+  margin-top: 140px;          /* space from main content */
+  padding-top: 30px;
+  text-align: center;
+  font-size: 0.95em;
+  color: #6e3b2f;             /* muted terracotta */
+}
+
+.contact-email a {
+  color: #6e3b2f;
+  text-decoration: none;
+  letter-spacing: 0.03em;
+}
+
+.contact-email a:hover {
+  color: #9b3d2d;             /* header terracotta */
+}
