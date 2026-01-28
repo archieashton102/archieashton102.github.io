@@ -148,3 +148,18 @@ footer {
 .contact-email a:hover {
   color: #9b3d2d;             /* header terracotta */
 }
+.about {
+  max-width: 600px;          /* ideal reading width */
+  margin: 120px auto 80px;   /* space above & below */
+  text-align: center;
+}
+
+.about h2 {
+  margin-bottom: 30px;
+  font-size: 1.6em;
+}
+
+.about p {
+  font-size: 1.05em;
+  line-height: 1.6;
+}
