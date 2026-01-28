@@ -166,4 +166,8 @@ footer {
 .about p {
   opacity: 0.9;
 }
+.nav-links a.active {
+  opacity: 0.6;
+}
+
 
