@@ -228,17 +228,20 @@ footer {
 }
 
 .more-link a {
-  font-size: 1.3em;
+  font-size: 0.95em;
   font-weight: 600;
-  font-style: italic;/* bolder, but not headline-bold */
-  color: #3b1f18;          /* darker terracotta for authority */
-  text-decoration: none;
+  font-style: italic;
+  color: #3b1f18;
+  text-decoration-line: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  text-decoration-color: rgba(59, 31, 24, 0.4);
   letter-spacing: 0.02em;
-  transition: color 0.2s ease;
+  transition: text-decoration-color 0.2s ease;
 }
 
 .more-link a:hover {
-  color: #9b3d2d;          /* header terracotta */
-  text-decoration: underline;
+  text-decoration-color: rgba(59, 31, 24, 0.8);
 }
+
 
