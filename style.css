@@ -228,7 +228,8 @@ footer {
 
 .more-link a {
   font-size: 1.3em;
-  font-weight: 600;        /* bolder, but not headline-bold */
+  font-weight: 600;
+  font-style: italic;/* bolder, but not headline-bold */
   color: #3b1f18;          /* darker terracotta for authority */
   text-decoration: none;
   letter-spacing: 0.02em;
