@@ -181,4 +181,33 @@ footer {
   margin-top: 1.2em;
 }
 
+.writing {
+  max-width: 700px;
+  margin: 120px auto;
+}
+
+.writing-entry {
+  margin-bottom: 60px; /* space between entries */
+}
+
+.writing h2 {
+  margin: 0 0 8px;
+  font-size: 1.3em;
+  text-align: left;
+}
+
+.writing h2 a {
+  color: #3b1f18; /* dark terracotta / brown */
+  text-decoration: none;
+}
+
+.writing h2 a:hover {
+  text-decoration: underline;
+}
+
+.publication {
+  margin: 0;
+  font-size: 0.95em;
+  color: #6e3b2f;
+}
 
