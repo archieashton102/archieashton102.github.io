@@ -2,68 +2,217 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="description" content="Alexa Ura is a journalist covering Texas, culture, and politics. Selected writing and contact information.">
+
+  <meta
+    name="description"
+    content="Alexa Ura is a journalist covering Texas, culture, politics, race, ethnicity, wealth, poverty and power."
+  >
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Alexa Ura — Journalist</title>
+
   <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
 
-<header>
-  <div class="header-inner">
-    <h1>Alexa Ura</h1>
+  <!-- NAVIGATION -->
 
-    <nav class="nav-links">
-  <a href="mailto:byalexaura@gmail.com">Contact</a>
-  <a href="writing.html">Writing</a>
-</nav>
+  <header class="site-header">
 
+    <div class="header-inner">
 
-    <button class="nav-toggle" aria-label="Toggle navigation">
-      ☰
-    </button>
-  </div>
-</header>
+      <a href="index.html" class="site-name">
+        Alexa Ura
+      </a>
 
+      <nav class="nav-links">
+        <a href="writing.html">Writing</a>
+        <a href="#about">About</a>
+        <a href="mailto:byalexaura@gmail.com">Contact</a>
+      </nav>
 
+      <button
+        class="nav-toggle"
+        aria-label="Toggle navigation"
+        aria-expanded="false"
+      >
+        ☰
+      </button>
+
+    </div>
+
+  </header>
 
 
   <main>
-    <section class="about">
-    <h1>About me</h1>
-    <section>
-      <p>
-        I’m a freelance writer based in Austin, Texas with more than a decade of experience 
-        covering the complex dynamics of race, ethnicity, wealth, poverty and power and how they are 
-        shaping the future of Texas and Texans, in the long and short term.
-      </p>
-      <p>
-        I worked previously for The Texas Tribune from 2013 to 2023. My work has appeared in other publications, such as Texas Monthly Magazine, The New York Times, The Washington Post, Texas Highways, The Guardian, NPR, Preservation Magazine, and more.
-      </p>
-    </section>
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content">
+
+        <p class="eyebrow">
+          Writer &amp; Journalist
+        </p>
+
+        <h1>
+          Alexa<br>
+          Ura
+        </h1>
+
+        <p class="hero-description">
+          Stories about Texas, power, identity and place.
+        </p>
+
+        <a href="writing.html" class="hero-link">
+          Explore my work <span>↓</span>
+        </a>
+
+      </div>
+
     </section>
 
-    <section>
-      <p class="contact-email">
-  <a href="mailto:byalexaura@gmail.com">byalexaura@gmail.com</a>
-</p>
+
+    <!-- INTRODUCTION -->
+
+    <section class="intro">
+
+      <div class="intro-label">
+        About
+      </div>
+
+      <div class="intro-text">
+
+        <h2>
+          Reporting on the people and forces shaping Texas.
+        </h2>
+
+        <p>
+          I’m a freelance writer based in Austin, Texas with more than a decade
+          of experience covering the complex dynamics of race, ethnicity,
+          wealth, poverty and power and how they are shaping the future of
+          Texas and Texans, in the long and short term.
+        </p>
+
+        <a href="#about" class="text-link">
+          More about me →
+        </a>
+
+      </div>
 
     </section>
+
+
+    <!-- FEATURED IMAGE -->
+
+    <section class="image-section">
+
+      <img
+        src="images/sunset.jpg"
+        alt="A tall tree silhouetted against the evening sky"
+      >
+
+      <div class="image-caption">
+        Austin, Texas
+      </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+
+    <section class="about" id="about">
+
+      <div class="about-heading">
+
+        <p class="eyebrow dark">
+          About me
+        </p>
+
+        <h2>
+          Writer.<br>
+          Reporter.<br>
+          Texan.
+        </h2>
+
+      </div>
+
+      <div class="about-copy">
+
+        <p>
+          I’m a freelance writer based in Austin, Texas with more than a decade
+          of experience covering the complex dynamics of race, ethnicity,
+          wealth, poverty and power and how they are shaping the future of
+          Texas and Texans, in the long and short term.
+        </p>
+
+        <p>
+          I worked previously for The Texas Tribune from 2013 to 2023. My work
+          has appeared in other publications, such as Texas Monthly Magazine,
+          The New York Times, The Washington Post, Texas Highways, The Guardian,
+          NPR, Preservation Magazine, and more.
+        </p>
+
+        <a
+          href="mailto:byalexaura@gmail.com"
+          class="email-link"
+        >
+          byalexaura@gmail.com
+        </a>
+
+      </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer class="site-footer">
+
+      <div>
+        © Alexa Ura
+      </div>
+
+      <div>
+        Austin, Texas
+      </div>
+
+      <a href="mailto:byalexaura@gmail.com">
+        Contact
+      </a>
+
+    </footer>
+
   </main>
 
-  <footer>
 
-  </footer>
-<script>
-  const toggleButton = document.querySelector('.nav-toggle');
-  const navLinks = document.querySelector('.nav-links');
+  <!-- MOBILE NAVIGATION -->
 
-  toggleButton.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
-  });
-</script>
+  <script>
 
+    const toggleButton = document.querySelector('.nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
 
+    toggleButton.addEventListener('click', () => {
+
+      const isOpen = navLinks.classList.toggle('active');
+
+      toggleButton.setAttribute(
+        'aria-expanded',
+        isOpen
+      );
+
+    });
+
+  </script>
+
+</body>
+</html>
 
 </body>
 </html>
