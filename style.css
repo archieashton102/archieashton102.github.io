@@ -966,5 +966,19 @@ a {
   }
 
 }
+.intro-photo {
+  width: 75%;
+  max-width: 380px;
+  margin: 0 auto 60px;
+  aspect-ratio: 4 / 5;
+}
+
+.intro-text h2 {
+  font-size: clamp(2.8rem, 13vw, 5rem);
+}
+
+.intro-label {
+  margin-bottom: 30px;
+}
 
 
