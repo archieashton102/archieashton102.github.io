@@ -829,4 +829,179 @@ a {
 
 }
 
+/* ========================================
+   WRITING PAGE
+   ======================================== */
+
+.writing-page {
+  background: var(--cream);
+  color: var(--navy);
+  min-height: 100vh;
+}
+
+
+/* Header */
+
+.writing-header {
+  position: relative;
+  background: var(--navy);
+  color: var(--cream);
+}
+
+
+/* Intro */
+
+.writing-intro {
+  padding: 11vw 10vw 8vw;
+  background: var(--navy);
+  color: var(--cream);
+}
+
+.writing-intro h1 {
+  margin: 20px 0 30px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(5rem, 13vw, 12rem);
+  font-weight: 400;
+  line-height: .8;
+  letter-spacing: -.07em;
+}
+
+.writing-intro-text {
+  max-width: 500px;
+  margin: 0;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--cream);
+}
+
+
+/* Writing list */
+
+.writing-list {
+  padding: 0 10vw;
+}
+
+
+/* Individual story */
+
+.writing-entry {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: 40px;
+  padding: 55px 0;
+  border-bottom: 1px solid rgba(23, 52, 72, .25);
+}
+
+.writing-number {
+  margin: 7px 0 0;
+  color: var(--terracotta);
+  font-size: .75rem;
+  font-weight: 600;
+  letter-spacing: .15em;
+}
+
+.writing-entry h2 {
+  max-width: 900px;
+  margin: 0 0 18px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2rem, 3.5vw, 3.8rem);
+  font-weight: 400;
+  line-height: 1.05;
+  letter-spacing: -.035em;
+}
+
+.writing-entry h2 a {
+  color: var(--navy);
+  text-decoration: none;
+  transition: color .25s ease;
+}
+
+.writing-entry h2 a:hover {
+  color: var(--terracotta);
+}
+
+.writing-entry .pub {
+  margin: 0;
+  color: var(--terracotta);
+  font-size: .72rem;
+  text-transform: uppercase;
+  letter-spacing: .16em;
+  font-weight: 600;
+}
+
+
+/* More work */
+
+.writing-more {
+  padding: 10vw;
+  background: var(--rose);
+  color: var(--black);
+}
+
+.writing-more p {
+  margin: 0 0 20px;
+  font-size: .75rem;
+  text-transform: uppercase;
+  letter-spacing: .18em;
+  font-weight: 600;
+}
+
+.writing-more a {
+  color: var(--black);
+  text-decoration: none;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2rem, 4vw, 4rem);
+  border-bottom: 1px solid var(--black);
+  transition: opacity .25s ease;
+}
+
+.writing-more a:hover {
+  opacity: .6;
+}
+
+
+/* Writing page mobile */
+
+@media (max-width: 700px) {
+
+  .writing-intro {
+    padding: 90px 25px 70px;
+  }
+
+  .writing-intro h1 {
+    font-size: clamp(5rem, 24vw, 8rem);
+  }
+
+  .writing-intro-text {
+    font-size: 1rem;
+  }
+
+  .writing-list {
+    padding: 0 25px;
+  }
+
+  .writing-entry {
+    display: block;
+    padding: 45px 0;
+  }
+
+  .writing-number {
+    margin-bottom: 20px;
+  }
+
+  .writing-entry h2 {
+    font-size: clamp(2rem, 10vw, 3.5rem);
+    line-height: 1.05;
+  }
+
+  .writing-more {
+    padding: 80px 25px;
+  }
+
+  .writing-more a {
+    font-size: 2.5rem;
+  }
+
+}
+
 
