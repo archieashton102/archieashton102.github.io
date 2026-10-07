@@ -332,101 +332,64 @@ a {
    INTRODUCTION
    ===================================================== */
 
+/* ========================================
+   INTRODUCTION
+   ======================================== */
+
 .intro {
-
-  min-height: 80vh;
-
-  padding:
-    12vw
-    10vw;
-
+  min-height: 85vh;
+  padding: 10vw;
   display: grid;
-
-  grid-template-columns:
-    1fr
-    2fr;
-
-  gap: 8vw;
-
+  grid-template-columns: minmax(280px, 420px) 1fr;
+  gap: 9vw;
   align-items: center;
-
   background: var(--cream);
-
   color: var(--navy);
 }
 
+.intro-photo {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+}
+
+.intro-photo img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.intro-text {
+  max-width: 800px;
+}
 
 .intro-label {
-
-  align-self: start;
-
-  padding-top: 10px;
-
-  font-size: 0.75rem;
-
+  margin: 0 0 30px;
+  padding-top: 0;
+  font-size: .75rem;
   text-transform: uppercase;
-
-  letter-spacing: 0.2em;
-
+  letter-spacing: .2em;
   font-weight: 600;
+  color: var(--terracotta);
 }
-
 
 .intro-text h2 {
-
   margin: 0 0 35px;
-
-  max-width: 850px;
-
-  font-family:
-    Georgia,
-    "Times New Roman",
-    serif;
-
+  max-width: 800px;
+  font-family: Georgia, "Times New Roman", serif;
   font-weight: 400;
-
-  font-size:
-    clamp(2.8rem, 6vw, 6rem);
-
-  line-height: 0.98;
-
-  letter-spacing: -0.045em;
+  font-size: clamp(2.8rem, 5.5vw, 5.8rem);
+  line-height: .98;
+  letter-spacing: -.045em;
 }
 
-
-.intro-text p {
-
+.intro-text p:not(.intro-label) {
   max-width: 650px;
-
   font-size: 1.08rem;
-
   line-height: 1.8;
-
   margin-bottom: 35px;
-}
-
-
-.text-link {
-
-  display: inline-block;
-
-  color: var(--terracotta);
-
-  text-decoration: none;
-
-  text-transform: uppercase;
-
-  letter-spacing: 0.14em;
-
-  font-size: 0.75rem;
-
-  font-weight: 600;
-
-  border-bottom:
-    1px solid
-    var(--terracotta);
-
-  padding-bottom: 6px;
 }
 
 
